@@ -1,6 +1,6 @@
 import mysql.connector
 
-#create a database
+# create a database
 a = mysql.connector.connect(host = "localhost", user = "root", password = "root")
 mycursor = a.cursor()
 mycursor.execute("create database if not exists library")
